@@ -98,7 +98,7 @@ module.exports = function(robot) {
 					}
 					logger.info('message');
 					logger.info(message);
-					//robot.messageRoom('general', message);
+					robot.messageRoom('general', message);
 					logMessage(message);
 				});
 			}
