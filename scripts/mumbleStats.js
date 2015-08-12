@@ -7,9 +7,9 @@ module.exports = function(robot) {
 		mumbleUtils.getCurrentUsers(function(err, users) {
 			var message = '';
 
-			if (users.count === 0) {
+			if (users.length === 0) {
 				message = 'Nobody is on mumble :broken_heart:';
-			} else if (users.count === 1) {
+			} else if (users.length === 1) {
 				message = 'Just *' + users[0] + '*... what a loner :poop:'
 			} else {
 				message = '*' + users.join('*, *') + '* are all currently on mumble :godmode:';
