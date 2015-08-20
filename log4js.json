@@ -7,7 +7,7 @@
       "type": "file",
       "filename": "logs/mumbleReport.log",
       "maxLogSize": 20480,
-      "backups": 3,
+      "backups": 10,
       "category": "mumbleReport"
     }]
 }

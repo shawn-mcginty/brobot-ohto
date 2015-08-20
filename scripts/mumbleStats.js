@@ -31,7 +31,7 @@ module.exports = function(robot) {
 		mumbleUtils.getCurrentStatus(function(err, status) {
 			var message;
 			if (status.x_connecturl) {
-				message = 'You can connect to mumble at ' + status.x_connecturl;
+				message = 'Using the password _havefun_ you can connect to mumble at ' + status.x_connecturl;
 			} else {
 				message = 'Hmm.. I can\'t reach mumble at the moment. Maybe it\'s down..';
 			}

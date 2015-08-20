@@ -7,8 +7,8 @@ var log4jsConfig = require('../log4js.json');
 
 log4js.configure(log4jsConfig);
 var logger = log4js.getLogger('mumbleReport');
-var REPEAT_INTERVAL = 5 * 1000; //5 seconds
-var REPEAT_MESSAGE_THRESHOLD = 60 * 1000; //60 seconds
+var REPEAT_INTERVAL = 60 * 1000;
+var REPEAT_MESSAGE_THRESHOLD = 180 * 1000;
 
 module.exports = function(robot) {
 	var lastLoggedInUsers = []
