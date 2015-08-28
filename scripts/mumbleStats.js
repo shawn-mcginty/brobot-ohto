@@ -3,11 +3,11 @@
 var mumbleUtils = require('../utils/mumble');
 
 module.exports = function(robot) {
-	robot.hear(/who's on mumble\?/i, function(res) {
+	robot.hear(/who's on mumble\??/i, function(res) {
 		reportWhoIsOnMumble(res);
 	});
 
-	robot.hear(/\b(is|are)\b.*on mumble\?/i, function(res) {
+	robot.hear(/\b(is|are)\b.*on mumble\??/i, function(res) {
 		reportWhoIsOnMumble(res);
 	});
 
@@ -27,7 +27,7 @@ module.exports = function(robot) {
 		});
 	}
 
-	robot.hear(/the mumble info\?/i, function(res) {
+	robot.hear(/the mumble info\??/i, function(res) {
 		mumbleUtils.getCurrentStatus(function(err, status) {
 			var message;
 			if (status.x_connecturl) {
